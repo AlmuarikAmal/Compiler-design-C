@@ -1,8 +1,8 @@
 # CompilerDesign
 
 ## lexical analyzers are divided into a cascade of two processes: 
-  I. Scanning consists of the simple processes that do not require tokenization of the input, such as deletion of comments and compaction of consecutive whitespace characters into one. without losing any line. 
-  II. Lexical analysis proper is the more complex portion, where the scanner produces the sequence of tokens as output. 
+  1. Scanning consists of the simple processes that do not require tokenization of the input, such as deletion of comments and compaction of consecutive whitespace characters into one. without losing any line. 
+  2. Lexical analysis proper is the more complex portion, where the scanner produces the sequence of tokens as output. 
   
 In "scanner.l" file i have read source program from file and deleted all comments (defining RE for C style comments). also, replaced all consecutive whitespace characters by a single blank, the moved resulting content to a separate file.
 In "anlyzer.l" I have done the following 
